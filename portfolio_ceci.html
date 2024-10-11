@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ceci's Portfolio</title>
+
+    <link rel="icon" type="image/x-icon" href="img\favicon.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.css" rel="stylesheet"/>
+    <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+    <header>
+        <p>PORTFOLIO</p>
+    </header>
+
+    <div class="container">
+        <div class="landingPage_cont">
+            <div class="glass-circle circle1"></div>
+        <div class="glass-circle circle2"></div>
+        
+            <div class="landingText_">
+                <div class="heading">
+                    <h1>HELLO! IT'S <span>CECI</span></h1>
+                </div>
+        
+                <div class="paragraph">
+                    <p><center>I'm an aspiring UI designer, focused on creating user-friendly and 
+                        attractive interfaces. My portfolio highlights my projects and skills 
+                        in Figma, showing how I blend design and functionality.</center></p>
+                </div>
+            </div>
+
+            <div class="buttons">
+                <div class="btn1">
+                    <a href="#headerWorks" class="btn-works">My Works</a>
+                </div>
+                <div class="btn2">
+                    <a href="#aboutMeCont" class="btn-about">About Me</a>
+                </div>
+            </div>
+        
+            <div class="connect">
+                <p class="connectWM">
+                    Connect With Me <a href="#footer"><i class="ri-arrow-right-circle-line"></i></a>
+                </p>
+            </div>
+        </div>
+    </div>
+    
+    
+<div class="aboutMeCont" id="aboutMeCont">
+    <div class="headingAbout">
+        <h2>ABOUT ME</h2>
+    </div>
+
+    <div class="slider">
+        <div class="slides">
+            <div class="slide active">
+                <img src="img\image 1.png" alt="Me" />
+                <div class="text">
+                    <h2>PERSONAL INFO</h2>
+                    <p>I’m Maria Cecillia M. Botio, a 4th year IT student whose major is Web and Mobile 
+                        Application. Most of my high school friends call me Cess or Cecil, while in college, 
+                        I go by Ria. I’m turning 21 this year, and I’m not thrilled about it—I really dislike 
+                        the idea of getting older!</p>
+
+                    </p>
+                </div>
+            </div>
+            <div class="slide">
+                <video width="300" height="200" controls>
+                    <source src="vid\Feel My Rhythm.mp4" type="video/mp4" style="border-radius: 25px;">
+                    Your browser does not support the video tag.
+                </video>
+                <div class="text">
+                    <h2>MY FAVES</h2>
+                    <p>I’m a huge fan of the K-pop girl group Red Velvet, and lately, 
+                        their songs have been my go-to for comfort. Their music brings back 
+                        nostalgic memories of my high school days. Right now, my favorite track 
+                        is 'Feel My Rhythm'.</p>
+                </div>
+            </div>
+            <div class="slide">
+                <img src="img\image 4.png" alt="Modern Family" />
+                <div class="text">
+                    <h2>COMFORT SERIES</h2>
+                    <p>Out of all the sitcoms I've seen, 'Modern Family' 
+                        is the one I’ll never get tired of. It never fails to lift my spirits 
+                        and always hits the perfect comedic notes.</p>
+                </div>
+            </div>
+            <div class="slide">
+                <img src="img\image 5.png" alt="Stroberiii" />
+                <div class="text">
+                    <h2>COMFORT FOOD</h2>
+                    <p>If someone asked me, "What food could you eat for the rest of your life?" 
+                        I'd immediately say strawberries. I love them so much that I could never imagine 
+                        a day without enjoying their sweetness!</p>
+                </div>
+            </div>
+        </div>
+        <i class="ri-arrow-left-s-line" onclick="changeSlide(-1)"></i>
+        <i class="ri-arrow-right-s-line" onclick="changeSlide(-1)"></i>
+    </div>
+    </div>
+</div>
+
+    <!-- MY SKILLS -->
+
+    <div class="skill_cont">
+        <div class="headingSkills">
+            <h2>MY SKILLS</h2>
+        </div>
+    
+        <div class="skill">
+    
+            <li><h3>UI Design</h3>
+                <span class="bar"><span class="ui"></span></span>
+            </li>
+        
+            <li><h3>Photography</h3>
+                <span class="bar"><span class="photog"></span></span>
+            </li>
+        
+            <li><h3>Procrastination</h3>
+                <span class="bar"><span class="procra"></span></span>
+            </li>
+        
+            <li><h3>Sleeping</h3>
+                <span class="bar"><span class="sleep"></span></span>
+            </li>
+        
+            
+         </div>
+    
+    </div>
+
+
+   <!-- MY WORKS -->
+
+   <div class="worksCont" id="headerWorks">
+    <div class="headerWorks">
+        <h2 id="headerWorks">MY WORKS</h2>
+    </div>
+
+    <input type="radio" id="uiux" name="category" class="category-input" checked>
+    <input type="radio" id="graphic" name="category" class="category-input">
+    <input type="radio" id="photography" name="category" class="category-input">
+    <input type="radio" id="animation" name="category" class="category-input">
+
+    <div class="content-wrapper">
+        <nav class="navbar">
+            <ul>
+                <li><label for="uiux">UI/UX Design</label></li>
+                <li><label for="graphic">Shirt Design</label></li>
+                <li><label for="animation">Animation</label></li>
+            </ul>
+        </nav>
+
+        <div class="gallery" id="gallery">
+            <div class="gallery-content" id="uiux-gallery">
+                <img src="img\ui1.png" alt="UI/UX 1">
+                <img src="img\ui2.png" alt="UI/UX 2">
+                <img src="img\ui3.png" alt="UI/UX 3">
+            </div>
+
+            <div class="gallery-content" id="graphic-gallery">
+                <img src="img\shirt1.jpg" alt="Graphic 1">
+                <img src="img\shirt2.jpg" alt="Graphic 2">
+            </div>
+
+            <div class="gallery-content" id="animation-gallery">
+                <video width="320" height="240" controls controls>
+                    <source src="vid\baji_PolaroidLove (1).mp4" type="video/mp4">
+                </video>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- CONTACT US -->
+    <div class="contactUsCont">
+        <div class="headerContact">
+            <h2>GET IN TOUCH WITH ME</h2>
+        </div>
+        <form class="contactForm">
+            <div class="nameFields">
+                <div class="firstNameCont">
+                    <label for="firstName">First Name:</label>
+                    <input type="text" id="firstName" name="firstName" required>
+                </div>
+                <div class="lastNameCont">
+                    <label for="lastName">Last Name:</label>
+                    <input type="text" id="lastName" name="lastName" required>
+                </div>
+            </div>
+    
+            <div class="phoneCont">
+                <label for="phone">Phone Number:</label>
+                <input type="tel" id="phone" name="phone" required>
+            </div>
+    
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+    
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" rows="4" required></textarea>
+    
+            <button type="submit" class="submitBtn">Send Message</button>
+        </form>
+    </div>
+</div>
+    
+<!-- FOOTER -->
+    <footer class="footer" id="footer">
+        <div class="social-media">
+            <a href="#" class="social-icon"><i class="ri-facebook-fill"></i></a>
+            <a href="#" class="social-icon"><i class="ri-twitter-fill"></i></a>
+            <a href="#" class="social-icon"><i class="ri-instagram-fill"></i></a>
+            <a href="#" class="social-icon"><i class="ri-linkedin-fill"></i></a>
+        </div>
+        <p class="copyright">Copyright 2024. All Rights Reserved.</p>
+    </footer>
+
+
+    <script>
+        let currentSlide = 0;
+const slides = document.querySelectorAll('.slide');
+
+function showSlide(index) {
+    slides.forEach((slide, i) => {
+        slide.style.display = (i === index) ? 'flex' : 'none';
+    });
+}
+
+function changeSlide(direction) {
+    currentSlide += direction;
+    if (currentSlide < 0) currentSlide = slides.length - 1;
+    if (currentSlide >= slides.length) currentSlide = 0;
+    showSlide(currentSlide);
+}
+
+showSlide(currentSlide);
+
+
+    </script>
+       
+    
+</body>
+</html>
